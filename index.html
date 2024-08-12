@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="header">
       <h1>Inventory Game 🕹</h1>
     </div>
     <div class="grid-container">
-      <div id="1" class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
+      <div onclick="gridItemPressed(this)" id="1" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
+      <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
     </div>
 
     <div class="items">
-      
       <div class="item" data-item="item1">
-        <img src=" " alt="Item 1">
+        <img onclick="objectPressed(this)" src="./images/ball.jpg" alt="Item 1">
+    </div>
+      <div class="item" data-item="item2">
+        <img onclick="objectPressed(this)" src="./images/frisbee.jpg" alt="Item 2">
     </div>
 </html>

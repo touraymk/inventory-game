@@ -18,5 +18,17 @@
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
+}
+
+
+img{
+  cursor: pointer;
+}
+
+.dashedLine{
+  border: dashed orange 3px;
+}
+
+.pointer{
   cursor: pointer;
 }
