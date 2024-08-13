@@ -28,6 +28,7 @@ function gridItemPressed(thisGridItem) {
         for (i = 0; i < myItemArray.length; i++)
             if (myItemArray[i].children[0].src == thisGridItem.children[0].src) {
                 myItemArray[i].children[0].style.visibility = "visible";
+                thisGridItem.children[0].src = "";
                 thisGridItem.children[0].removeAttribute('src');
             }
     }
