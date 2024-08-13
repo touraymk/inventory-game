@@ -27,13 +27,14 @@ function gridItemPressed(thisGridItem) {
         let myItemArray = document.getElementsByClassName('item');
         for (i = 0; i < myItemArray.length; i++)
             if (myItemArray[i].children[0].src == thisGridItem.children[0].src) {
-                myItemArray[i].children[0].style.visibility = "visible";
-                thisGridItem.children[0].src = "";
+                myItemArray[i].children[0].style.visibility = "visible"; 
+                thisGridItem.children[0].style.visibility = "hidden"; // To make it work in safari
                 thisGridItem.children[0].removeAttribute('src');
             }
     }
     else if (objectSelected != undefined) {
         thisGridItem.children[0].src = objectSelected.src;
+        thisGridItem.children[0].style.visibility = "visible"; // To make it work in safari
         objectSelected.style.visibility = "hidden";
         objectSelected.classList.toggle('dashedLine');
         objectSelected = undefined;
