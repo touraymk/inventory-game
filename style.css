@@ -26,6 +26,8 @@
   padding: 10px;
   width: 64px;
   height: auto;
+  position: fixed;
+  top: 40vh;
 }
 
 
@@ -47,4 +49,17 @@ img{
 
 .pointer{
   cursor: pointer;
+}
+
+#btn{
+  height: 50px;
+  width: 70px;
+position: fixed;
+top: 5vh;
+left: 70px;
+}
+
+#btn2{
+  position: fixed;
+  top: 50vh;
 }

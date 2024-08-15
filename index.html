@@ -11,7 +11,7 @@
     <div class="header">
       <h1>Inventory Game</h1>
     </div>
-    <div class="grid-container">
+    <div id="myGridId" class="grid-container">
       <div onclick="gridItemPressed(this)" id="1" class="grid-item"><img></div>
       <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
       <div onclick="gridItemPressed(this)" class="grid-item"><img></div>
@@ -67,6 +67,11 @@
       <div class="item" data-item="item12">
         <img onclick="objectPressed(this)" src="./images/tile228.png" alt="Item 12" class="large-image">
       </div>
+    </div>
+    <div class="buttons">
+        <button id="btn" class="button" onclick="hide(this)">Gjem!</button>
+        <button id="btn2" class="button" onclick="reset()">Reset!</button>
+
     </div>
 
 
